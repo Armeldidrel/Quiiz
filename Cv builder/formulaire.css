@@ -1,0 +1,49 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(64, 64, 64);
+}
+#choix_photo  {
+    display: none;
+  
+}
+#choix_photo  {
+    display: none;
+  
+}
+#lab{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+         cursor: pointer;
+    }
+   
+}
+#lab img{
+    margin-left: -80px;
+}
+input{
+    background-color: #093b0c;
+}
+.im{
+    width: 400px;
+    height: 400px;
+    background-image: url("kl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+
+    border-radius: 50%;
+    margin-top: 1.5%;
+    border-style: solid;
+    border-color: khaki;
+    border-width: 10px;
+}

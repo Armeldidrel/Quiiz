@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.text-design {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+  background-image: url("https://img.freepik.com/photos-premium/stade-bleu-etoile-mur_889227-21903.jpg?w=996");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.box-princpal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 12%;
+}
+
+.question-box {
+  width: 650px;
+  height: 350px;
+  border-color: rgb(10, 95, 0);
+  border-style: solid;
+  border-radius: 30px;
+  z-index: 1;
+  background-image: url("../gg.jpg");
+  border-width: 5px;
+  background-size: cover;
+  position: fixed;
+  opacity: 0.97;
+}
+
+/* Style for button */
+
+.button-28 {
+  appearance: none;
+  background-color: rgb(30, 30, 30);
+  border: 2px solid rgb(234, 255, 0);
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 1s cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 250px;
+  will-change: transform;
+
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #249098;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.les-reponses {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  padding: 10px;
+  margin-top: 20%;
+  margin-left: 5%;
+}
+
+.question {
+  position: absolute;
+  top: 20px;
+  left: 0%;
+  text-align: center;
+  font-size: 2em;
+  color: rgb(246, 244, 244);
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: normal;
+
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+} 
+
+footer > p {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: normal;
+  position: fixed;
+  bottom: 15px;
+  left: 35%;
+  color: rgb(76, 76, 76);
+  font-style: italic;
+}
+
+.para {
+  padding: 10px;
+  display: flex;
+  left: 60%;
+  top: 5px;
+  position: absolute;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.para span {
+  width: 200px;
+  background-color: rgb(0, 128, 148);
+  padding: 15px;
+  margin-left: 30px;
+}
+
+/* Media Query for mobile screens */
+
+@media only screen and (max-width: 600px) {
+    .box-princpal{
+        margin-top: 10%;
+    }
+  .question-box {
+    width: 80%;
+    height: 50%;
+    padding: 10px;
+  }
+
+  .les-reponses {
+    margin-top: 20%;
+    grid-template-columns: repeat(300px);
+    grid-template-rows:repeat(4,100px);
+    justify-content: center;
+    gap: 5px;
+    margin-left: 0;
+  }
+
+  .button-28 {
+    width: 100%;
+    height: -10%;
+  }
+  .text-design{
+    font-size: 16px;
+  }
+
+  footer > p {
+   text-align: center;
+   margin-left: -25%;
+
+  }
+  .para > span{
+    width: 100px;
+    padding-top: 10p;
+    height: 5px;
+    
+}
+.para{
+    margin-left: -40%;
+}
+body{
+    background-color: url("../bg.jpg");
+}
+
+}
